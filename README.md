@@ -7,7 +7,8 @@ This project is an AI web application that utilizes OpenAI's GPT-4o mini model t
 ```
 ai-web-app
 ├── src
-│   ├── app.py                # Main entry point for the Streamlit application
+│   ├── main.py              # Main application for Korean prompts
+│   ├── main_en.py           # Main application for English prompts
 │   ├── services
 │   │   └── gpt_service.py    # Service for interacting with the OpenAI API
 │   ├── utils
@@ -24,7 +25,7 @@ ai-web-app
 
 1. **Clone the repository:**
    ```
-   git clone <repository-url>
+   git clone https://github.com/solkit70/GuidingLight.git
    cd ai-web-app
    ```
 
@@ -38,10 +39,14 @@ ai-web-app
    Update the `src/config/settings.py` file with your OpenAI API key and any other necessary configuration settings.
 
 4. **Run the application:**
-   Start the Streamlit application by executing:
-   ```
-   streamlit run src/app.py
-   ```
+   - For Korean prompts, execute:
+     ```
+     streamlit run src/main.py
+     ```
+   - For English prompts, execute:
+     ```
+     streamlit run src/main_en.py
+     ```
 
 ## Usage
 
